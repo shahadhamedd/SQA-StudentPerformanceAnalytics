@@ -11,6 +11,9 @@ for student in students:
     marks = student["marks"]
     attendance = student["attendance"]
 
+    if len(marks) == 0:
+        continue
+
     average = sum(marks) / len(marks)
 
     if average < 50 or attendance < 60:
